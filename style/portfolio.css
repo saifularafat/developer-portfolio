@@ -105,7 +105,7 @@
         border: 1px solid #FD6E0A;
         border-radius: 5px;
         transition: .4s ease;
-        position: relative;
+        /* position: relative; */
     }
 
     .banner .file:hover{
@@ -113,13 +113,13 @@
       color: #FD6E0A;
     }
 
-  .banner .file::after{
+  /* .banner .file::after{
     content: '\f019';
     position: absolute;
     left: 25px;
     transform: translateX(-50%);
     top: 12px;
-  }
+  } */
 
     .banner .phone{
       font-size: 20px; 
@@ -131,7 +131,7 @@
       border: 1px solid #FD6E0A;
       border-radius: 5px;
       transition: .4s ease;
-      position: relative;
+      /* position: relative; */
 
   }
 
@@ -140,13 +140,13 @@
     color: #ffffff;
   }
 
-  .banner .phone::after {
+  /* .banner .phone::after {
     content: '\f095';
     position: absolute;
     left: 25px;
     transform: translateX(-50%);
     top: 12px;
-}
+} */
 
 /* main section style strat now */
 
