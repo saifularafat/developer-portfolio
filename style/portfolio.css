@@ -213,7 +213,7 @@ section{
 }
 /* wehat i do section strat now */
 .what-description {
-  max-width: 900px;
+  /* max-width: 900px; */
   margin: 0 auto;
   font-weight: 400;
   font-size: 18px;
@@ -223,9 +223,9 @@ section{
   padding-bottom: 25px;
 }
 
-.skile-main-column{
-  display: flex;
-  gap: 24px;
+.skile-main-column {
+	display: flex;
+	gap: 24px;
 }
 
 .skile-title{
@@ -382,4 +382,237 @@ section{
 
  .contact img:hover{
   opacity: .7;
+ }
+
+ /* @media querie style / website responsive strat now */
+
+@media screen and (max-width: 576px) {
+  section {
+    margin-top: 52px;
+    margin-bottom: 60px;
+  }
+  /* header section respo  */
+  .main-column{
+    flex-direction: column;
+    margin: 0 30px;
+  }
+  .main-column img {
+    width: 300px;
+    height: 400px;
+    margin-top: 15px;
+  }
+
+  .header{
+    background-image: none;
+  }
+
+  .banner .banner-title {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .banner .banner-sub-title {
+    font-size: 42px;
+    line-height: 48px;
+  }
+  .nev_title {
+    font-size: 48px;
+    margin-top: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+  nav {
+    padding: 0 25px;
+  }
+  nav ul li {
+    padding-top: 12px;
+    margin-right: 0;
+  }
+  .banner .file {
+    padding: 9px 12px;
+  }
+  .banner a{
+    margin-right: 10px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .banner p {
+    margin-bottom: 25px;
+  }
+  .banner .phone {
+    font-size: 18px; 
+  }
+  /* about-section respo  */
+  .about-section{
+    padding: 35px 30px;
+  }
+  .about-main-column {
+    flex-direction: column;
+  }
+  /* what-i-do section respo */
+  .skile-main-column{
+    flex-direction: column;
+  }
+
+  .skile-column{
+    width: auto;
+    height: 280px;
+  }
+
+  .what-description {
+    padding: 15px 30px;
+  }
+
+  .resume-content {
+    flex-direction: column;
+  }
+  .resume-item {
+    width: auto;
+    margin: 10px 20px;
+  }
+  .resume-content .resume-title{
+    margin-left: 20px;
+  }
+  .resume-item .title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .resume-item .sub-title {
+    font-size: 18px;
+  }
+  .resume-btn {
+    margin-top: 0;
+  }
+  .btn-primary {
+    padding: 10px 30px;
+  }
+  /* contact section respo */
+  .main-contact-column {
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 60px;
+  }
+  .contact input[type="text"], input[type="email"]{
+    padding: 5px 0 5px 10px;
+  }
+
+  textarea {
+    padding: 15px 0 15px 10px;
+  }
+}
+  
+
+ @media screen and (min-width: 577px) and (max-width: 992px){
+  .main-column{
+    flex-direction: column;
+    margin: 0 30px;
+  }
+
+  .main-column img {
+    width: 350px;
+    height: 420px;
+    padding-top: 20px;
+    margin: 0 0 0 auto;
+  }
+
+  .btn {
+    padding: 10px 19px;
+  }
+  nav {
+    padding: 30px 42px;
+  }
+  nav ul li {
+    margin-right: 40px;
+  }
+  .banner .banner-title {
+    font-size: 46px;
+    line-height: 60px;
+    padding-left: 15px;
+  }
+  .banner .banner-sub-title {
+    font-size: 44px;
+    line-height: 50px;
+    padding-left: 14px;
+  }
+  .banner p {
+    line-height: 29px;
+    margin-bottom: 25px;
+    padding-left: 16px;
+    padding-right: 20px;
+  }
+  .banner .file {
+    padding: 12px 23px;
+    margin-left: 15px;
+  }
+  .header{
+    background-image: none;
+  }
+  .header{
+    background-image: url('../images/header_bg.png');
+  }
+
+  /* about-section respo */
+  .about-section {
+    padding: 40px 80px;
+  }
+
+  /* skile section respo */
+  .skile-main-column {
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+    
+  }
+  .skile-column {
+    width: 33%;
+    margin-left: 4%;
+    margin-right: 2%;
+  }
+  .what-description {
+    padding: 30px;
+  }
+
+  .resume-content {
+    flex-direction: column;
+  }
+  .resume-item {
+    width: auto;
+    margin: 10px 20px;
+  }
+
+  .resume-content .resume-title{
+    margin-left: 20px;
+  }
+  .resume-btn {
+    margin-top: 1px;
+  }
+  .main-contact-column{
+    gap: 40px;
+    padding: 50px 80px;
+  }
+  .contact input[type="text"], input[type="email"]{
+    padding: 8px 0 8px 15px;
+  }
+
+  textarea {
+    padding: 20px 0 20px 10px;
+  }
+ }
+
+ @media screen and  (max-width: 993px) {
+  .skile-main-column {
+    padding-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .what-description {
+    padding: 30px;
+  }
+}
+
+ .hide{
+  display: none;
  }
